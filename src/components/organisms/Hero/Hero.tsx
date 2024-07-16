@@ -29,24 +29,13 @@ const Hero = () => {
        *  change bg color to bg-black-100 and reduce grid color from
        *  0.2 to 0.03
        */}
-      <div
-        className='h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
-       absolute top-0 left-0 flex items-center justify-center'
-      >
-        {/* Radial gradient for the container to give a faded look */}
-        <div
-          // chnage the bg to bg-black-100, so it matches the bg color and will blend in
-          className='absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
-         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]'
-        />
-      </div>
 
       {/* <div className='flex-row'>
 
       </div> */}
 
-      <div className='flex flex-row justify-center relative my-20 z-10 border border-yellow-300'>
-        <div className='border border-green-400 max-w-[69vw] md:max-w-2xl lg:max-w-[40vw] flex flex-col justify-center'>
+      <div className='flex flex-row justify-center relative my-20 z-10 '>
+        <div className='max-w-[69vw] md:max-w-2xl lg:max-w-[40vw] flex flex-col justify-center'>
           <p className='uppercase tracking-widest text-xs text-blue-100 max-w-80'>
             SOFTWARE ENGINEER
           </p>
@@ -57,12 +46,15 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words='Building Reliable & Scalable Software'
+            words='Building Scalable & Reliable Software'
             className='text-[60px] md:text-5xl lg:text-6xl'
           />
 
           <p className=' md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-            Hi! I&apos;m Ifamust, a mobile Developer based in New York.
+            Hi! I&apos;m Ifamust, a mobile Developer based in New York. I am
+            extremely passionate in building high quality, scalable application
+            using Next.js, and React Native. With a keen focus on user
+            Experience, detail oriented approach, I can build anything.
           </p>
 
           <a href='#about'>
@@ -74,7 +66,7 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className='border border-pink-600 w-1/2 '>
+        <div className=' w-1/2 '>
           <GridGlobe />
         </div>
       </div>
