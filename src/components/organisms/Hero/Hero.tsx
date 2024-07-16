@@ -3,6 +3,7 @@ import { FaLocationArrow } from 'react-icons/fa6';
 import { Spotlight } from '@/components/ui/SpotLight';
 import { TextGenerateEffect } from '@/components/ui/TextGenerateEffect';
 import CustomButton from '@/components/atoms/CustomButton/CustomButton';
+import GridGlobe from '@/components/ui/GridGlobe';
 
 const Hero = () => {
   return (
@@ -40,10 +41,14 @@ const Hero = () => {
         />
       </div>
 
-      <div className='flex justify-center relative my-20 z-10'>
-        <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-          <p className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
-            Dynamic Web Magic with Next.js
+      {/* <div className='flex-row'>
+
+      </div> */}
+
+      <div className='flex flex-row justify-center relative my-20 z-10 border border-yellow-300'>
+        <div className='border border-green-400 max-w-[69vw] md:max-w-2xl lg:max-w-[40vw] flex flex-col justify-center'>
+          <p className='uppercase tracking-widest text-xs text-blue-100 max-w-80'>
+            SOFTWARE ENGINEER
           </p>
 
           {/**
@@ -52,12 +57,12 @@ const Hero = () => {
            *  change md:text-6xl, add more responsive code
            */}
           <TextGenerateEffect
-            words='Transforming Concepts into Seamless User Experiences'
-            className='text-center text-[40px] md:text-5xl lg:text-6xl'
+            words='Building Reliable & Scalable Software'
+            className='text-[60px] md:text-5xl lg:text-6xl'
           />
 
-          <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-            Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
+          <p className=' md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
+            Hi! I&apos;m Ifamust, a mobile Developer based in New York.
           </p>
 
           <a href='#about'>
@@ -67,6 +72,10 @@ const Hero = () => {
               position='right'
             />
           </a>
+        </div>
+
+        <div className='border border-pink-600 w-1/2 '>
+          <GridGlobe />
         </div>
       </div>
     </div>
